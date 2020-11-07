@@ -1,10 +1,8 @@
 package com.integration.automatic;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.integration.apireponses.ShipmentResponse;
-import com.integration.apireponses.StockResponse;
+import com.integration.apiresponses.ShipmentResponse;
 import com.integration.apirequests.ShipmentRequest;
-import com.integration.apirequests.StockRequest;
 import org.camunda.bpm.engine.RuntimeService;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;

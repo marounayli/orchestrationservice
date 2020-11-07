@@ -2,10 +2,8 @@ package com.integration.automatic;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.integration.apireponses.PaymentResponse;
-import com.integration.apireponses.StockResponse;
+import com.integration.apiresponses.PaymentResponse;
 import com.integration.apirequests.PaymentRequest;
-import com.integration.apirequests.StockRequest;
 import org.camunda.bpm.engine.RuntimeService;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;

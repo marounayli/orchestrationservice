@@ -1,7 +1,7 @@
 package com.integration.automatic;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.integration.apireponses.OrderApprovalResponse;
+import com.integration.apiresponses.OrderApprovalResponse;
 import org.camunda.bpm.engine.RuntimeService;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;

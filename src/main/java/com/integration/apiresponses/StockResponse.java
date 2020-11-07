@@ -1,4 +1,4 @@
-package com.integration.apireponses;
+package com.integration.apiresponses;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
