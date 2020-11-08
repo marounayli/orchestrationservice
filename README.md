@@ -19,7 +19,7 @@ In order to be able to run this project you need :
 
 Eclipse/IntelliJ
 mysql server running on the local machine to support Camunda's database
-The following postman collection contains the request for an order : 
+The following postman collection contains the request for an order :  https://www.getpostman.com/collections/c47c9fc74aaa68fc8923
 
 
 
