@@ -4,16 +4,19 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Currency;
-
 @Getter
 @Setter
 @NoArgsConstructor
 public class StockResponse {
-    private String itemId;
+    private String customerId;
+    private String customerName;
+    private String customerEmail;
+    private String customerAddress;
+    private Integer productId;
+    private String productDescription;
     private Integer quantity;
-    private String itemDescription;
-    private Double pricePerUnit;
-    private Currency currency;
+    private Float pricePerUnit;
+    private String currency;
     private Boolean available;
+    private String orderId;
 }

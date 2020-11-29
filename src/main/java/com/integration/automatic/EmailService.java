@@ -25,7 +25,7 @@ public class EmailService implements JavaDelegate {
     void sendEmail(Map<String,Object> processVariables) {
 
         SimpleMailMessage msg = new SimpleMailMessage();
-        msg.setTo("marounayle@gmail.com");
+        msg.setTo((String)processVariables.get("userEmail"));
 
         msg.setSubject("Order Rejection");
         msg.setText(String.format("Your order has been rejected, information about your order are as follow %s",processVariables));

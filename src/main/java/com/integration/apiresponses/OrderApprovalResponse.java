@@ -4,29 +4,33 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Currency;
-
 @Getter
 @Setter
 @NoArgsConstructor
 public class OrderApprovalResponse {
-    private String customerId;
-    private String customerEmail;
     private String customerAddress;
-    private String unitDimensions;
-    private Integer unitWeight;
-    private String itemId;
     private Integer quantity;
-    private String itemDescription;
-    private Boolean initiated;
-    private String estimatedTimeOfArrival;
-    private Double pricePerUnit;
-    private Currency currency;
+    private String shipment;
+    private Integer productId;
+    private Integer orderId;
     private Boolean available;
+    private Boolean accepted;
+    private Float finalPrice;
+    private String customerName;
+    private String paymentType;
+    private Float pricePerUnit;
+    private String stock_verification;
+    private String customerEmail;
+    private Integer customerId;
+    private String currency;
+    private String payment;
+    private String cardNumber;
+    private String productDescription;
+
 
     @Override
     public String toString() {
-        return String.format("Order has been approved\nOrder Description: %s\nQuantity %s\nUnit Dimension %s\n"
-                                ,itemDescription,quantity,unitDimensions);
+        return String.format("Order has been approved\nOrder Description: %s\nQuantity %s\nTotal price %s%s\n"
+                                ,productDescription,quantity,finalPrice,currency);
     }
 }

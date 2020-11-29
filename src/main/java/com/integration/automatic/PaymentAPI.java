@@ -44,7 +44,7 @@ public class PaymentAPI implements JavaDelegate {
             HttpEntity<PaymentRequest> requestEntity = new HttpEntity<>(paymentRequest);
             ResponseEntity<PaymentResponse> response = restTemplate.postForEntity(apiUrl, requestEntity, PaymentResponse.class);
             PaymentResponse paymentResponse =response.getBody();
-            if (response.getStatusCode() == HttpStatus.OK && Objects.requireNonNull(paymentResponse).getApproved()) {
+            if (response.getStatusCode() == HttpStatus.OK && Objects.requireNonNull(paymentResponse).getAccepted()) {
                 execution.setVariable("payment", "approved");
                 execution.setVariables(objectMapper.convertValue(paymentResponse, new TypeReference<Map<String, ?>>() {}));
             } else {

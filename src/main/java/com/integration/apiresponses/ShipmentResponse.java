@@ -8,14 +8,10 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class ShipmentResponse {
-    private String customerId;
-    private String customerEmail;
-    private String customerAddress;
-    private String unitDimensions;
-    private Integer unitWeight;
-    private String itemId;
-    private Integer quantity;
-    private String itemDescription;
+    private Integer orderId;
+    private Float unitWeight;
+    private String unitDimension;
+    private String estimatedArrival;
+    private String initiatedTime;
     private Boolean initiated;
-    private String estimatedTimeOfArrival;
 }

@@ -39,8 +39,8 @@ public class StockAPI implements JavaDelegate {
     public void execute(DelegateExecution execution) throws Exception {
         try {
             String processInstanceId = execution.getProcessInstanceId();
-            Map<String, Object> processVariables = runtimeService.getVariables(processInstanceId);
-            StockRequest stockRequest = objectMapper.convertValue(processVariables, StockRequest.class);
+            Map<String, Object> processVariables = runtimeService.getVariables(processInstanceId); // get the process variables
+            StockRequest stockRequest = objectMapper.convertValue(processVariables, StockRequest.class); // filter
             HttpEntity<StockRequest> requestEntity = new HttpEntity<>(stockRequest);
             ResponseEntity<StockResponse> response = restTemplate.postForEntity(apiUrl, requestEntity, StockResponse.class);
             StockResponse stockResponse = response.getBody();

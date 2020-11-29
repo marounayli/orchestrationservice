@@ -8,12 +8,9 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class ShipmentRequest {
-    private String customerId;
-    private String customerEmail;
-    private String customerAddress;
-    private String unitDimensions;
-    private Long unitWeight;
-    private String itemId;
-    private Integer quantity;
-    private String itemDescription;
+    private String orderId;
+    private String unitWeight;
+    private String unitDimension;
+
+
 }

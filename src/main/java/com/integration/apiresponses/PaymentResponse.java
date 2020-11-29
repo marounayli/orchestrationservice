@@ -4,22 +4,22 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Currency;
-
 @Getter
 @Setter
 @NoArgsConstructor
 public class PaymentResponse {
     private String customerId;
     private String customerEmail;
-    private String customerAddress;
-    private Integer quantity;
-    private Double pricePerUnit;
-    private Currency currency;
+    private Integer orderId;
     private String paymentType;
-    private Double totalPrice;
-    private Double taxRate;
-    private Boolean approved;
+    private String cardNumber;
+    private Integer productId;
+    private Integer quantity;
+    private Float pricePerUnit;
+    private Boolean accepted;
+    private String productDescription;
+    private Float finalPrice;
+    private String currency;
 
 
 }
